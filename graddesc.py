@@ -1,4 +1,5 @@
 import numpy as np
+from visualize import draw_function_3dsurface_and_path
 np.set_printoptions(precision=4)
 
 def f(x_vals):
@@ -78,3 +79,6 @@ print('i\t{: >20}\t{: >20}\t{})'.format('(x1, x2)(k)', 'grad_f(k)', 'h(k)'))
 for i in range(k):
     print('{}:\t{: >20}\t{: >20}\t{:.4f}'.format(i + 1, str(x[i]), str(grad_f[i]), h[i]))
 print('\nResult: x={}\nf={}'.format(x[k], f(x[k])))
+
+# visualize function and path in space
+draw_function_3dsurface_and_path(f, (-3, 3), (-8, 2), x)
