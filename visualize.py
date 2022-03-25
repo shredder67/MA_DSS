@@ -25,7 +25,7 @@ def visualize_func_and_path(f, x_interval, y_interval, path_points=None) -> None
 
 
     fig = plt.figure(figsize=(12, 8))
-    
+    fig.canvas.manager.set_window_title('Визуализация минимизации')
     # First plot - 3D surface
     ax1 = fig.add_subplot(1, 2, 1, projection='3d')
     ax1.plot_surface(X, Y, Z, cmap='plasma', edgecolor='none', zorder=1)
