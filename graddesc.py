@@ -1,5 +1,5 @@
 import numpy as np
-from visualize import draw_function_3dsurface_and_path
+from visualize import visualize_func_and_path
 np.set_printoptions(precision=4)
 
 def f(x_vals):
@@ -81,4 +81,4 @@ for i in range(k):
 print('\nResult: x={}\nf={}'.format(x[k], f(x[k])))
 
 # visualize function and path in space
-draw_function_3dsurface_and_path(f, (-3, 3), (-8, 2), x)
+visualize_func_and_path(f, (-3, 3), (-8, 2), x)

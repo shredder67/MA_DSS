@@ -50,6 +50,8 @@ for i in range(1, n + 1):
 print_table(x, f_vals, n + 1, "Начальная конфигурация")
 
 counter = n + 1
+
+
 while True:
     k = f_vals.index(max(f_vals)) # f_max
 
