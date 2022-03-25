@@ -4,7 +4,7 @@
 
 1. **simplex.py** - Simplex method
 2. **graddesc.py** - Gradient descenent with minimum step
-3. **neuton_raph.py** - Neuton Raphson
+3. **newton_raphson.py** - Newton Raphson method
 
 ## Screenshots
 
