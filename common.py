@@ -18,9 +18,9 @@ def calc_grad(f, n, x_vals):
 
 def is_pos_def(matrix, n):
     def matrix_minor(arr, i, j):
-        return np.delete(np.delete(arr,i,axis=0), j, axis=1)
+        return arr[:i + 1, :j + 1]
 
-    # Все миноры должны быть положительны
+    # Все угловые миноры должны быть положительны
     for i in range(n):
         if np.linalg.det(matrix_minor(matrix, i, i)) < 0: return False
 
